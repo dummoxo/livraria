@@ -63,20 +63,54 @@ article {
     padding: 8px 16px;
     border-radius: 5px;
     display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .botao:hover {
     background-color: darkred;
 }
 
+form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+form {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+    max-width: 400px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.formularios {
+    display: flex;
+    gap: 20px;
+}
+
 @media (max-width: 700px) {
     .livros {
         flex-direction: column;
     }
+
     header {
         flex-direction: column;
     }
+
     nav ul {
         flex-wrap: wrap;
+    }
+
+    .formularios {
+        flex-direction: column;
     }
 }
