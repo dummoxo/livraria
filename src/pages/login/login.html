@@ -7,7 +7,7 @@
     <link href="login.css" rel="stylesheet">
     <title>Login - Livraria</title>
 </head>
-
+      
 <body>
 
     <header>
@@ -31,21 +31,23 @@
         <h2>Entrar</h2>
 
         <div class="formularios">
-            <form>
-                <label> E-mail: <input type="email" required></label>
-                <label> Senha: <input type="password" required></label>
-                <button class="botao">Entrar</button>
-            </form>
+            <form id="loginForm">
+    <label> E-mail: <input type="email" id="login-email" required></label>
+    <label> Senha: <input type="password" id="login-senha" required></label>
+    <button class="botao">Entrar</button>
+    <p id="msg-login"></p>
+</form>
 
         </div>
 
         <h2>Cadastrar-se</h2>
         <div class="formularios">
-        <form>
-            <label> Nome: <input type="text" required></label>
-            <label> Digite um e-mail: <input type="email" required></label>
-            <label> Crie uma nova senha: <input type="password" required></label>
+        <form id="registerForm">
+            <label> Nome: <input type="text" id="cad-nome" required></label>
+            <label> Digite um e-mail: <input type="email" id="cad-email" required></label>
+            <label> Crie uma nova senha: <input type="password" id="cad-senha" required></label>
             <button class="botao">Cadastrar</button>
+            <p id="msg-cadastro"></p>
         </form>
         </div>
     </main>
@@ -54,7 +56,7 @@
         <p>&copy; 2026 Livraria. Todos os direitos reservados.</p>
         <p>Contato: contato@livraria.com</p>
     </footer>
-
+    <script src="login.js"></script>
 </body>
 
 </html>
