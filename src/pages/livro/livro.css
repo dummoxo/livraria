@@ -1,0 +1,30 @@
+  .livros {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 4% auto;
+        gap: 30px;
+
+    }
+ article {
+        background-color: var(--card);
+        border-radius: 16px;
+        padding: 10px 0;
+        border: 1px solid var(--bordas);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 270px;
+        max-width: 270px;
+        height: 300px;
+
+        h2 {
+            font-size: 1rem;
+            color: var(--texto);
+            padding: 0 20px;
+        }
+    }
