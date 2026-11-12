@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="login.css" rel="stylesheet">
+    <link href="../../geral.css" rel="stylesheet">
+    <script src="login.js"></script>
     <title>Login - Livraria</title>
 </head>
-      
+
 <body>
 
     <header>
-        <img src="../../logo/img/logo.svg" alt="Livraria" class="logo">
+        <img src="../../img/logo/logo.svg" alt="Livraria" class="logo">
         <nav>
             <ul>
                 <li><a href="../index/index.html">Início</a></li>
@@ -32,24 +34,15 @@
 
         <div class="formularios">
             <form id="loginForm">
-    <label> E-mail: <input type="email" id="login-email" required></label>
-    <label> Senha: <input type="password" id="login-senha" required></label>
-    <button class="botao">Entrar</button>
-    <p id="msg-login"></p>
-</form>
+                <label> E-mail: <input type="email" id="login-email" required></label>
+                <label> Senha: <input type="password" id="login-senha" required></label>
+                <button class="botao">Entrar</button>
+                <p id="msg-login"></p>
+            </form>
 
         </div>
 
-        <h2>Cadastrar-se</h2>
-        <div class="formularios">
-        <form id="registerForm">
-            <label> Nome: <input type="text" id="cad-nome" required></label>
-            <label> Digite um e-mail: <input type="email" id="cad-email" required></label>
-            <label> Crie uma nova senha: <input type="password" id="cad-senha" required></label>
-            <button class="botao">Cadastrar</button>
-            <p id="msg-cadastro"></p>
-        </form>
-        </div>
+        
     </main>
 
     <footer>
