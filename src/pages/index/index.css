@@ -1,37 +1,4 @@
-header {
-    background-color: brown;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    nav {
-
-        ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            color: sandybrown;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        a:hover {
-            color: snow;
-        }
-    }
-}
-
 main {
-    padding: 20px 30px;
-    flex: 1;
-    margin: 20px 0;
 
     .container {
         display: grid;
@@ -203,10 +170,4 @@ main {
             }
         }
     }
-}
-
-footer {
-    background-color: brown;
-    color: white;
-    padding: 15px 30px;
 }
