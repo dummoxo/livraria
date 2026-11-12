@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: var(--fundo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+
+  .logo {
+    height: 60px;
+  }
+}
+
+:root {
+  --vinho: #a3292b;
+  --vinho-esc: #842022;
+  --fundo: #1c1315;
+  /* fundo da página */
+  --card: #2a1d20;
+  /* cards */
+  --texto: #f5ebe6;
+  /* texto */
+  --texto-sec: #b9a6a6;
+  /* texto secundário */
+  --bordas: #43303a;
+  /* bordas */
+  --menu: #f08a4b;
+  /* menu */
+  --verde: #6fd4a0;
+  --verde-bg: #1d3a2c;
+  --rosa-bg: #472128;
+}
