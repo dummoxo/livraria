@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="registrar.css" rel="stylesheet">
+    <link href="../../geral.css" rel="stylesheet">
+    <script src="registrar.js"></script>
+    <title>Registrar - Livraria</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="../../img/logo/logo.svg" alt="Livraria" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index/index.html">Início</a></li>
+                <li><a href="../acervo/acervo.html">Acervo</a></li>
+                <li><a href="../livro/livro.html">Livro</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+                <li><a href="../emprestimo/emprestimo.html">Empréstimo</a></li>
+                <li><a href="../relatorio/relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Login</h1>
+        <p>Aqui você pode fazer login na sua conta.</p>
+
+        <h2>Cadastrar-se</h2>
+        <div class="formularios">
+            <form id="registerForm">
+                <label> Nome: <input type="text" id="cad-nome" required></label>
+                <label> Digite um e-mail: <input type="email" id="cad-email" required></label>
+                <label> Crie uma nova senha: <input type="password" id="cad-senha" required></label>
+                <button class="botao">Cadastrar</button>
+                <p id="msg-cadastro"></p>
+            </form>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Livraria. Todos os direitos reservados.</p>
+        <p>Contato: contato@livraria.com</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+
+</html>

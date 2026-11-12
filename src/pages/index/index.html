@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
+    <link href="../../geral.css" rel="stylesheet">
     <title>Livraria</title>
 </head>
 
 <body>
-
     <header>
-        <img src="../../logo/img/logo.svg" alt="Livraria" class="logo">
+        <img src="../../img/logo/logo.svg" alt="Livraria" class="logo">
         <nav>
             <ul>
                 <li><a href="../index/index.html">Início</a></li>
@@ -25,15 +25,58 @@
     </header>
 
     <main>
-        <h1>Bem-vindo à Livraria</h1>
-        <p>Na livraria você encontra os melhores livros sem ter que pagar nada.</p>
+        <section class="container">
+            <div class="content-texto">
+                <h1>Bem-vindo à Livraria</h1>
+                <p>Na livraria você encontra os melhores livros sem ter que pagar nada.</p>
+
+                <div class="content-botao">
+                    <a href="../acervo/acervo.html" class="botao">Registrar</a>
+                    <a href="../login/login.html" class="botao">Login</a>
+                </div>
+            </div>
+
+            <section class="carrossel">
+                <button id="anterior" class="seta">&#10094;</button>
+                <img id="imagem" src="../../img/imgs/livro-slide1.jpg" alt="Template de capa de livro">
+                <button id="proximo" class="seta">&#10095;</button>
+            </section>
+        </section>
+
+        <section class="content-passo">
+            <h2>Descubra novos mundos</h2>
+            <p>Explore nossa coleção de livros e encontre histórias que vão te transportar para outros universos.</p>
+
+            <div class="como-funciona">
+                <div class="passo">
+                    <h3>1. Cadastro</h3>
+                    <p>Crie sua conta para ter acesso ao nosso acervo completo.</p>
+                </div>
+                <div class="passo">
+                    <h3>2. Empréstimo</h3>
+                    <p>Escolha os livros que deseja emprestar e aproveite a leitura.</p>
+                </div>
+                <div class="passo">
+                    <h3>3. Devolução</h3>
+                    <p>Devolva os livros dentro do prazo para continuar aproveitando nossos serviços.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-pronto">
+            <div class="content-botao">
+                <h2>Pronto para começar a ler?</h2>
+                <a href="../acervo/acervo.html" class="botao">Explorar biblioteca</a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Livraria. Todos os direitos reservados.</p>
         <p>Contato: contato@livraria.com</p>
     </footer>
-
+    <script src="index.js"></script>
 </body>
 
 </html>
