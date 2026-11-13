@@ -1,3 +1,5 @@
+exigirLogin();
+
 const dadosRelatorio = localStorage.getItem('emprestimos');
 const emprestimos = JSON.parse(dadosRelatorio) || [];
 
