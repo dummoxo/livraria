@@ -17,7 +17,7 @@ for (let i = 0; i < emprestimos.length; i++) {
 
     const item = document.createElement('li');
 
-    item.textContent = emprestimo.titulo + " — Autor: " + emprestimo.autor;
+    item.textContent = emprestimo.titulo + " - Autor: " + emprestimo.autor;
 
-    lsita.appendChild(item);
+    lista.appendChild(item);
 }
