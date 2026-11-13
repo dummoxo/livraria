@@ -20,17 +20,17 @@ function exigirLogin() {
 function atualizarTela() {
     const user = getUsuarioLogado();
 
-    // some quando logado (Login, Registrar...)
+    
     document.querySelectorAll(".so-deslogado").forEach(function (el) {
         el.style.display = user ? "none" : "";
     });
 
-    // aparece só quando logado
+    
     document.querySelectorAll(".so-logado").forEach(function (el) {
         el.style.display = user ? "" : "none";
     });
 
-    // adiciona "Sair" no menu
+   
     const menu = document.querySelector("header nav ul");
     if (user && menu) {
         const li = document.createElement("li");
