@@ -1,16 +1,3 @@
-body {
-  margin: 0;
-  background-color: var(--fundo);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-
-  .logo {
-    height: 60px;
-  }
-}
-
 :root {
   --vinho: #a3292b;
   --vinho-esc: #842022;
@@ -33,6 +20,19 @@ body {
   --capa-azul: #2a5d8f;
   --capa-verde: #2f7d57;
   --capa-laranja: #b86a1a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--fundo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+
+  .logo {
+    height: 60px;
+  }
 }
 
 
@@ -65,7 +65,7 @@ header {
 
     a {
       font-size: 1rem;
-      color: sandybrown;
+      color: #f5ebe6;
       text-decoration: none;
       transition: all 0.3s ease;
       cursor: pointer;
