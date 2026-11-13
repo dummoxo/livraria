@@ -8,7 +8,7 @@ h1 {
         color: var(--texto);
     }
 
-    p {
+    p, section {
         color: var(--texto-sec);
 
     }
