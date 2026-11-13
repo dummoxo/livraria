@@ -16,12 +16,12 @@ formRegister.addEventListener("submit", (e) => {
         if(nome === ""){
             throw "Nome inválido";
         }
-        const posArr = email.indexOf("@") // posicao do @
+        const posArr = email.indexOf("@") 
         const posPonto = email.lastIndexOf("."); 
 
         if(posArr < 1 || posPonto < posArr + 2 || posPonto + 2 >= email.length){
             throw "Email inválido";
-        } else if (lista.find(u => u.email === email)){ // é o nome que damos a cada ficha enquanto ele percorre. Na primeira volta u é a primeira ficha, na segunda é a segunda, e assim por diante.
+        } else if (lista.find(u => u.email === email)){ 
             throw "Este e-mail já está cadastrado!";
         }
 

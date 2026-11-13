@@ -26,10 +26,10 @@ document.getElementById("anterior").addEventListener("click", function () {
 });
 
 function mostrar() {
-    imagem.classList.add("sumindo");          // começa a sumir
+    imagem.classList.add("sumindo");          
 
     setTimeout(function () {
-        imagem.src = imagens[atual];          // troca a foto quando já sumiu
-        imagem.classList.remove("sumindo");   // aparece de novo
-    }, 200);                                  // mesmo tempo do transition
+        imagem.src = imagens[atual];          
+        imagem.classList.remove("sumindo");   
+    }, 200);                                  
 }
