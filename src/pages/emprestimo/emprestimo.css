@@ -1,6 +1,16 @@
 main{
     flex: 1;
 }
+h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: var(--texto);
+    }
+
+    p {
+        color: var(--texto-sec);
+
+    }
 
 
 #lista-emprestimos {

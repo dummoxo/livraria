@@ -1,6 +1,6 @@
 const lista = document.getElementById("lista-emprestimos");
 exigirLogin();
-const usuario = getUsuarioLogado()?.email;
+const usuario = JSON.parse(dados)?.email;
 
 function lerEmprestimos() {
     return JSON.parse(localStorage.getItem("emprestimos")) || [];

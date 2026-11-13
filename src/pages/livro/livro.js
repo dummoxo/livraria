@@ -1,4 +1,6 @@
 
+const kevin = JSON.parse(localStorage.getItem("userLogado"));
+
 function lerEmprestimos() {
     return JSON.parse(localStorage.getItem("emprestimos")) || [];
 }
@@ -8,7 +10,7 @@ function salvarEmprestimos(lista) {
 }
 
 function reservarLivro(botao) {
-    const user = getUsuarioLogado();
+    const user = kevin;
     if (!user) {
         alert("Faça login para reservar um livro.");
         window.location.href = "../login/login.html";
@@ -19,7 +21,7 @@ function reservarLivro(botao) {
     const titulo = card.querySelector("h2").textContent;
     const autor = card.querySelector(".livro-autor").textContent.replace("Autor: ", "");
 
-    const usuario = getUsuarioLogado()?.email;
+    const usuario = user?.email;
     const emprestimos = lerEmprestimos();
 
     const jaReservado = emprestimos.some(e => e.titulo === titulo && e.usuario === usuario);
