@@ -1,5 +1,5 @@
 const lista = document.getElementById("lista-emprestimos");
-const usuario = localStorage.getItem("sessao");
+const usuario = localStorage.getItem("userLogado");
 
 function lerEmprestimos() {
     return JSON.parse(localStorage.getItem("emprestimos")) || [];
