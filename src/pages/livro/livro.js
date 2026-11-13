@@ -8,12 +8,18 @@ function salvarEmprestimos(lista) {
 }
 
 function reservarLivro(botao) {
+    const user = getUsuarioLogado();
+    if (!user) {
+        alert("Faça login para reservar um livro.");
+        window.location.href = "../login/login.html";
+        return;
+    }
     const card = botao.closest("article");   
     const imagem = card.querySelector("img");
     const titulo = card.querySelector("h2").textContent;
     const autor = card.querySelector(".livro-autor").textContent.replace("Autor: ", "");
 
-    const usuario = localStorage.getItem("userLogado");
+    const usuario = getUsuarioLogado()?.email;
     const emprestimos = lerEmprestimos();
 
     const jaReservado = emprestimos.some(e => e.titulo === titulo && e.usuario === usuario);
