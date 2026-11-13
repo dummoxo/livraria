@@ -1,0 +1,22 @@
+main {
+    margin: 40px;
+    color: #f5ebe6;
+}
+
+#total-emprestimos {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#lista-relatorio {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-relatorio li {
+    background-color: #2a1d20;
+    border: 1px solid #43303a;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 5px;
+}
