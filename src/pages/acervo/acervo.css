@@ -37,6 +37,7 @@ main {
         align-items: center;
         justify-content: center;
         min-width: 270px;
+        max-width: 270px;
         height: 300px;
 
         h2 {
