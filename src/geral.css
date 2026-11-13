@@ -29,6 +29,10 @@ body {
   --verde: #6fd4a0;
   --verde-bg: #1d3a2c;
   --rosa-bg: #472128;
+
+  --capa-azul: #2a5d8f;
+  --capa-verde: #2f7d57;
+  --capa-laranja: #b86a1a;
 }
 
 
@@ -40,6 +44,18 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  .logado{
+    gap: 30px;
+    margin-left: 30px;
+    li{
+      a {
+        margin-left: 10px;
+      }
+      font-size: 1rem;
+      color: #FFD18A;
+    }
+  }
+
   ul {
     display: flex;
     list-style: none;
@@ -48,9 +64,11 @@ header {
     padding: 0;
 
     a {
+      font-size: 1rem;
       color: sandybrown;
       text-decoration: none;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
   }
 }
@@ -58,7 +76,10 @@ header {
 footer {
   background-color: brown;
   color: white;
-  padding: 15px 30px;
+  padding: 5px 30px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav main {
@@ -81,46 +102,7 @@ article {
   border-radius: 16px;
 }
 
-.botao {
-  background-color: brown;
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  display: inline-block;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
 
-.botao:hover {
-  background-color: darkred;
-}
-
-form label {
-  display: block;
-  margin-bottom: 15px;
-}
-
-form {
-  padding: 20px;
-  border-radius: 16px;
-  background-color: white;
-  max-width: 400px;
-}
-
-form input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.formularios {
-  display: flex;
-  gap: 20px;
-}
 
 @media (max-width: 700px) {
   .livros {

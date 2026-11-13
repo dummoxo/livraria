@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../geral.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
     <script src="login.js" defer></script>
+    
     <title>Login - Livraria</title>
 </head>
 
@@ -28,19 +30,27 @@
     </header>
 
     <main>
-        <h1>Login</h1>
-        <p>Aqui você pode fazer login na sua conta.</p>
 
-        <h2>Entrar</h2>
 
         <div class="formularios">
-            <form id="loginForm">
-                <label> E-mail: <input type="email" id="login-email" required></label>
-                <label> Senha: <input type="password" id="login-senha" required></label>
-                <button class="botao">Entrar</button>
-                <p id="msg-login"></p>
-            </form>
+            <div class="tela-esq">
+                <img src="../../img/imgs/livroLogin.png" alt="">
+                <p>Sua próxima leitura <br> começa aqui</p>
+            </div>
 
+
+            <div class="section-login">
+                <h1>Login</h1>
+                <form id="loginForm" class="loginForm">
+                    <label> E-mail: <input placeholder="Digite seu e-mail" type="email" id="login-email" required></label>
+                    <label> Senha: <input placeholder="Digite sua senha" type="password" id="login-senha" required></label>
+                    <div class="button">
+                        <button class="botao">Entrar</button>
+                        <span>E a primeira vez?<br><a href="../registrar/registrar.html">Registre-se</a></span>
+                    </div>
+                    <p id="msg-login"></p>
+                </form>
+            </div>
         </div>
 
 
@@ -50,7 +60,6 @@
         <p>&copy; 2026 Livraria. Todos os direitos reservados.</p>
         <p>Contato: contato@livraria.com</p>
     </footer>
-    <script src="login.js"></script>
 </body>
 
 </html>

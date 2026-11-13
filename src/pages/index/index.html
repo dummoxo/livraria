@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../geral.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="/js/geral.js" defer></script>
     <title>Livraria</title>
 </head>
 
@@ -21,9 +23,15 @@
                 <li><a href="../livro/livro.html">Livro</a></li>
                 <li><a href="../emprestimo/emprestimo.html">Empréstimo</a></li>
                 <li><a href="../relatorio/relatorio.html">Relatório</a></li>
-                <li><a href="../login/login.html">Login</a></li>
+
+                <div class="logado">
+                    <li id="area-usuario">
+
+                    </li>
+                </div>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -32,7 +40,7 @@
                 <h1>Bem-vindo à Livraria</h1>
                 <p>Na livraria você encontra os melhores livros sem ter que pagar nada.</p>
 
-                <div class="content-botao">
+                <div id="mostrar-cad-log" class="content-botao">
                     <a href="../registrar/registrar.html" class="botao">Registrar</a>
                     <a href="../login/login.html" class="botao">Login</a>
                 </div>
@@ -78,7 +86,7 @@
         <p>&copy; 2026 Livraria. Todos os direitos reservados.</p>
         <p>Contato: contato@livraria.com</p>
     </footer>
-    <script src="index.js"></script>
+
 </body>
 
 </html>
