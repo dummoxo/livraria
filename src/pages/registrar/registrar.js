@@ -19,7 +19,7 @@ formRegister.addEventListener("submit", (e) => {
         const posArr = email.indexOf("@") 
         const posPonto = email.lastIndexOf("."); 
 
-        if(posArr < 1 || posPonto < posArr + 2 || posPonto + 2 >= email.length){
+        if(posArr < 1 || posPonto + 2 >= email.length){
             throw "Email inválido";
         } else if (lista.find(u => u.email === email)){ 
             throw "Este e-mail já está cadastrado!";
